@@ -57,7 +57,7 @@ export default function Home() {
       <footer className="border-t border-slate-700 mt-auto">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <p className="text-slate-500 text-sm text-center">
-            Powered by WebAssembly numerical solvers
+            Powered by TypeScript numerical solvers
           </p>
         </div>
       </footer>
