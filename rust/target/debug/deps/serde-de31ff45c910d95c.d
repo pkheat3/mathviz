@@ -1,0 +1,14 @@
+/Users/pavankumar/Desktop/Math App/mathviz/rust/target/debug/deps/serde-de31ff45c910d95c.d: /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/pavankumar/Desktop/Math\ App/mathviz/rust/target/debug/build/serde-37cd523ba2c3e190/out/private.rs
+
+/Users/pavankumar/Desktop/Math App/mathviz/rust/target/debug/deps/libserde-de31ff45c910d95c.rlib: /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/pavankumar/Desktop/Math\ App/mathviz/rust/target/debug/build/serde-37cd523ba2c3e190/out/private.rs
+
+/Users/pavankumar/Desktop/Math App/mathviz/rust/target/debug/deps/libserde-de31ff45c910d95c.rmeta: /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/pavankumar/Desktop/Math\ App/mathviz/rust/target/debug/build/serde-37cd523ba2c3e190/out/private.rs
+
+/Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/pavankumar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/pavankumar/Desktop/Math\ App/mathviz/rust/target/debug/build/serde-37cd523ba2c3e190/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/pavankumar/Desktop/Math App/mathviz/rust/target/debug/build/serde-37cd523ba2c3e190/out
