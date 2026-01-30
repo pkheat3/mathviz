@@ -9,7 +9,7 @@ import {
   solveVanDerPol,
   solveDampedPendulum,
   solveRossler,
-} from "@/lib/wasm";
+} from "@/lib/solvers";
 
 const MiniScene = dynamic(() => import("./MiniScene"), { ssr: false });
 
