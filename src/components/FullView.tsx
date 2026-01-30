@@ -9,6 +9,7 @@ import {
   solveVanDerPol,
   solveDampedPendulum,
   solveRossler,
+  solveHookesLaw,
 } from "@/lib/solvers";
 
 const Scene = dynamic(() => import("./Scene"), { ssr: false });
@@ -72,6 +73,17 @@ export default function FullView({ equation, onBack }: FullViewProps) {
             x0: initial.x0,
             y0: initial.y0,
             z0: initial.z0,
+            dt: simulation.dt,
+            steps: simulation.steps,
+          });
+          break;
+        case "hookes_law":
+          result = await solveHookesLaw({
+            k: params.k ?? 2.0,
+            m: params.m ?? 1.0,
+            damping: params.damping ?? 0.15,
+            x0: initial.x0,
+            y0: initial.y0,
             dt: simulation.dt,
             steps: simulation.steps,
           });

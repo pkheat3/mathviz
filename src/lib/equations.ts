@@ -1,4 +1,4 @@
-export type EquationType = "lorenz" | "van_der_pol" | "damped_pendulum" | "rossler";
+export type EquationType = "lorenz" | "van_der_pol" | "damped_pendulum" | "rossler" | "hookes_law";
 
 export interface EquationPreset {
   id: EquationType;
@@ -95,6 +95,28 @@ export const equations: Record<EquationType, EquationPreset> = {
     },
     initial: { x0: 1, y0: 1, z0: 1 },
     simulation: { dt: 0.02, steps: 10000 },
+  },
+  hookes_law: {
+    id: "hookes_law",
+    name: "Hooke's Law Spring",
+    shortDescription: "The rhythm of a bouncing spring",
+    fullDescription:
+      "Hooke's Law describes the restoring force of a spring: F = -kx. When combined with damping (friction), we get a damped harmonic oscillator. The phase space shows how position and velocity evolve together - spiraling inward as the spring loses energy to friction, or forming perfect ellipses in the undamped case.",
+    funFact:
+      "Robert Hooke discovered this law in 1676 and published it as a Latin anagram 'ceiiinosssttuv' which unscrambles to 'ut tensio, sic vis' meaning 'as the extension, so the force'. He did this to establish priority while keeping the discovery secret!",
+    dimension: 2,
+    params: {
+      k: 2.0,
+      m: 1.0,
+      damping: 0.15,
+    },
+    paramLabels: {
+      k: "k (spring constant)",
+      m: "m (mass)",
+      damping: "γ (damping)",
+    },
+    initial: { x0: 3, y0: 0, z0: 0 },
+    simulation: { dt: 0.02, steps: 5000 },
   },
 };
 

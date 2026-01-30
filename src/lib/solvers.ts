@@ -100,6 +100,18 @@ function rosslerDerivative(a: number, b: number, c: number): DerivativeFn3D {
   ];
 }
 
+// Hooke's Law (damped harmonic oscillator)
+// dx/dt = v
+// dv/dt = -(k/m)x - γv
+// where k = spring constant, m = mass, γ = damping coefficient
+function hookesLawDerivative(k: number, m: number, damping: number): DerivativeFn2D {
+  const omega2 = k / m; // ω² = k/m
+  return (_t, [x, v]) => [
+    v,
+    -omega2 * x - damping * v,
+  ];
+}
+
 // Solver functions that return THREE.Vector3 arrays
 
 export function solveLorenz(params: {
@@ -204,6 +216,33 @@ export function solveRossler(params: {
     state = rk4Step3D(f, t, state, dt);
     t += dt;
     points.push(new THREE.Vector3(state[0], state[1], state[2]));
+  }
+
+  return points;
+}
+
+export function solveHookesLaw(params: {
+  k: number;
+  m: number;
+  damping: number;
+  x0: number;
+  y0: number;
+  dt: number;
+  steps: number;
+}): THREE.Vector3[] {
+  const { k, m, damping, x0, y0, dt, steps } = params;
+  const f = hookesLawDerivative(k, m, damping);
+  const points: THREE.Vector3[] = [];
+
+  let state: [number, number] = [x0, y0];
+  let t = 0;
+
+  points.push(new THREE.Vector3(state[0], state[1], 0));
+
+  for (let i = 0; i < steps; i++) {
+    state = rk4Step2D(f, t, state, dt);
+    t += dt;
+    points.push(new THREE.Vector3(state[0], state[1], 0));
   }
 
   return points;
