@@ -1,0 +1,15 @@
+{
+  "name": "mathviz-core",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "mathviz_core_bg.wasm",
+    "mathviz_core.js",
+    "mathviz_core.d.ts"
+  ],
+  "main": "mathviz_core.js",
+  "types": "mathviz_core.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
